@@ -1,0 +1,35 @@
+{
+  "pages": [
+    {
+      "id": "select organization",
+      "isDefault": true
+    },
+    {
+      "id": "manage mission",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "clonedFromApplicationId": "6824359f153d8a56c37cf1ec",
+  "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "FIXED"
+    }
+  },
+  "color": "#CCCCCC",
+  "icon": "restaurant",
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "index_browser_js_https://cdnjs.cloudflare.com/ajax/libs/nanoid/5.0.7/index.browser.js"
+    }
+  ],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "isCommunityTemplate": false,
+  "deleted": false
+}

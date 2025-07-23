@@ -1,0 +1,77 @@
+{
+  "unpublishedPage": {
+    "name": "manage mission",
+    "slug": "manage-mission",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 2070,
+          "containerStyle": "none",
+          "snapRows": 79,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 89,
+          "minHeight": 810,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "manage mission_Get_TagList",
+              "name": "Get_TagList",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "manage mission_get.getMissionList",
+              "name": "get.getMissionList",
+              "collectionId": "manage mission_get",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  storeValue(\"isLoading\", true);\n  const missionList = await Get_MissionList.run();\n  const categoryIdSet = new Set();\n  const tagIdSet = new Set();\n  missionList.forEach(({tagIdList, categoryId}) => {\n    categoryIdSet.add(categoryId);\n    tagIdList.forEach(tagId => {\n      tagIdSet.add(tagId);\n    });\n  });\n  const categoryIdListFromSet = Array.from(categoryIdSet);\n  const tagIdListFromSet = Array.from(tagIdSet);\n  const categoryInfoList = await Get_CategoriesByCategoryIds.run({\n    categoryIds: categoryIdListFromSet\n  });\n  const tagInfoList = await Get_TagList_By_TagIdList.run({\n    tagIdList: tagIdListFromSet\n  });\n  const categoryMap = {};\n  const tagMap = {};\n  categoryInfoList.forEach(({id, name}) => {\n    categoryMap[id] = name;\n  });\n  tagInfoList.forEach(({id, title}) => {\n    tagMap[id] = title;\n  });\n  const newMissionList = missionList.map(({tagIdList, categoryId, ...mission}) => {\n    const orderedTagIdList = tagIdList;\n    const orderedTagTitleList = tagIdList.map(id => tagMap[id]);\n    if (!categoryMap[categoryId]) {\n      console.log(mission.name);\n    }\n    return {\n      ...mission,\n      categoryName: categoryMap[categoryId] ?? '카테고리 없음',\n      categoryId,\n      tagIdList: orderedTagIdList,\n      tagNameList: orderedTagTitleList,\n      goormPieceReward: mission.reward.goormPiece,\n      experiencePointReward: mission.reward.experiencePoint\n    };\n  });\n  storeValue(\"isLoading\", false);\n  return newMissionList;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "manage mission_Get_MissionCategories",
+              "name": "Get_MissionCategories",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.store.organizationId"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "layoutOnLoadActionErrors": [],
+        "validOnPageLoadActions": true,
+        "id": "manage mission",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "68243f7b153d8a56c37cf279_333a2a33-f22e-42e7-8c76-16cc5f9c8392"
+}

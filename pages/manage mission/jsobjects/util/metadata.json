@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "util",
+    "pageId": "manage mission",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "INSERT_BATCH_SIZE",
+        "value": "10"
+      },
+      {
+        "name": "basic",
+        "value": "{\n  str: '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',\n  len: 18\n}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "manage mission_util",
+  "deleted": false,
+  "gitSyncId": "6717783f5de83173db6353e6_5587cc42-8ff2-43fe-8c5b-b043738a6f84"
+}

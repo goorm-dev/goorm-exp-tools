@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "update",
+    "pageId": "manage mission",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "manage mission_update",
+  "deleted": false,
+  "gitSyncId": "6717783f5de83173db6353e6_df6bab95-1e67-4d58-8ed3-f4a204ebcfe4"
+}

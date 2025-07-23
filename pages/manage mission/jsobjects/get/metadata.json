@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "get",
+    "pageId": "manage mission",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "manage mission_get",
+  "deleted": false,
+  "gitSyncId": "6717783f5de83173db6353e6_3303b2af-cf5f-4fe5-b48e-3582c64eacaf"
+}

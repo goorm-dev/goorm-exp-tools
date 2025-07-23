@@ -1,0 +1,11 @@
+{
+  "name": "index_browser_js",
+  "uidString": "index_browser_js_https://cdnjs.cloudflare.com/ajax/libs/nanoid/5.0.7/index.browser.js",
+  "accessor": [
+    "index_browser_js"
+  ],
+  "url": "https://cdnjs.cloudflare.com/ajax/libs/nanoid/5.0.7/index.browser.js",
+  "version": "",
+  "defs": "{\"!name\":\"LIB/index_browser_js\",\"index_browser_js\":{\"customAlphabet\":{\"!type\":\"fn()\"},\"customRandom\":{\"!type\":\"fn()\"},\"nanoid\":{\"!type\":\"fn()\"},\"random\":{\"!type\":\"fn()\"},\"urlAlphabet\":{\"!type\":\"string\"}}}",
+  "deleted": false
+}
