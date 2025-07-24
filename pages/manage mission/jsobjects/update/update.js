@@ -76,7 +76,12 @@ export default {
 						dailyMissionDate: moment(set.dailyMissionDate).toDate(),
 						precedingMissionIdList: [],
 					}
-				})
+				});
+
+				// 미션 삽입 성공시, 알림 전송
+				await Post_DailyMission_Notification.run({
+					missionId: newId
+				});
 			}
 		}
 
@@ -127,38 +132,6 @@ export default {
 
 		storeValue("isLoading", false);
 	},
-	// 데일리 미션 생성 알림 전송
-	// addNotification: async({ userId, missionId, categoryId, dailyMissionDate }) => {
-	// if(!missionId || !dailyMissionDate || !userId || !categoryId) {
-	// console.log('값이 유효하지 않음');
-	// return;
-	// }
-	// 
-	// const category = await Get_MissionCategory.run({ id: categoryId });
-	// const groupIds = await category.groupIds ?? [];
-	// 
-	// const joinedUserIds = await Get_Joined_GroupUsers.run({ groupIds });
-	// 
-	// const notifications = joinedUserIds.map((targetId) => {
-	// id: util.makeRandomIdWithPrefix('nt');
-	// userId: targetId,
-	// category: 'activity',
-	// type: "dailyMission",
-	// title: {
-	// key: "notification.title.dailyMission",
-	// data: {
-	// dailyMissionDate,
-	// },
-	// },
-	// description: {
-	// key: "notification.description.dailyMission",
-	// data: {
-	// 
-	// }
-	// }
-	// })
-	// 
-	// },
 
 	// updateMissionProgress: async ({missionId, levelRequirement} = {missionId:'mi_NPPCAoSqiC', levelRequirement: 10}) => {
 	// if(!missionId || !levelRequirement) {
