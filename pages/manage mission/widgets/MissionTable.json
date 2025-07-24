@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.c4395b694ca4b5a84741345b057b6866.svg",
-    "topRow": 4,
+    "topRow": 5,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -117,7 +117,7 @@
     ],
     "dynamicPropertyPathList": [{"key": "tableData"}],
     "displayName": "Table",
-    "bottomRow": 56,
+    "bottomRow": 57,
     "columnWidthMap": {
         "isTeamMission": 60,
         "createdAt": 107,
