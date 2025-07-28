@@ -27,4 +27,8 @@ export default {
 			"$date": date
 		}
 	},
+	
+	getToday: () => {
+		return new Date();
+	}
 }

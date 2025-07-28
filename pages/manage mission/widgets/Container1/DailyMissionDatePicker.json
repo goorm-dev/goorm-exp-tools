@@ -12,7 +12,8 @@
         {"key": "borderRadius"},
         {"key": "isDisabled"},
         {"key": "isRequired"},
-        {"key": "isVisible"}
+        {"key": "isVisible"},
+        {"key": "defaultDate"}
     ],
     "labelTooltip": "데일리 미션을 추가하는 경우, 필수로 지정해 주세요.",
     "isDisabled": "{{\n!!(MissionTable.selectedRow?.id) ||\nDailyMissionCheckBox.isChecked === false}}",
@@ -42,7 +43,8 @@
     "dynamicPropertyPathList": [
         {"key": "isDisabled"},
         {"key": "isRequired"},
-        {"key": "isVisible"}
+        {"key": "isVisible"},
+        {"key": "defaultDate"}
     ],
     "displayName": "DatePicker",
     "searchTags": ["calendar"],
@@ -56,7 +58,7 @@
     "labelPosition": "Left",
     "key": "vhwpx6r5ei",
     "labelTextSize": "0.875rem",
-    "defaultDate": "2025-07-21T16:06:47.4747+09:00",
+    "defaultDate": "{{util.getToday()}}",
     "isDeprecated": false,
     "rightColumn": 22,
     "thumbnailSVG": "/static/media/thumbnail.6f2ddea04e74f31810326bef3bc239b8.svg",
