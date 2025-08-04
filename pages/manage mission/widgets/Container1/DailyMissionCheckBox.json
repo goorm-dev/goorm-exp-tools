@@ -3,15 +3,14 @@
     "mobileBottomRow": 65,
     "widgetName": "DailyMissionCheckBox",
     "dynamicPropertyPathList": [
-        {"key": "isVisible"},
         {"key": "isDisabled"},
         {"key": "defaultCheckedState"}
     ],
     "displayName": "Checkbox",
     "iconSVG": "/static/media/icon.3bebd01b788335d2558d7c32bf949729.svg",
     "searchTags": ["boolean"],
-    "topRow": 61,
-    "bottomRow": 65,
+    "topRow": 51,
+    "bottomRow": 55,
     "parentRowSpace": 10,
     "type": "CHECKBOX_WIDGET",
     "alignWidget": "LEFT",
@@ -20,11 +19,10 @@
     "animateLoading": true,
     "parentColumnSpace": 12.703125,
     "dynamicTriggerPathList": [],
-    "leftColumn": 2,
+    "leftColumn": 46,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
-        {"key": "isVisible"},
         {"key": "isDisabled"}
     ],
     "labelPosition": "Left",
@@ -32,7 +30,7 @@
     "key": "ilg22w9g5f",
     "isRequired": false,
     "isDeprecated": false,
-    "rightColumn": 12,
+    "rightColumn": 54,
     "thumbnailSVG": "/static/media/thumbnail.aa4d27836e27bb6c4c45db14dee8f2b2.svg",
     "dynamicHeight": "AUTO_HEIGHT",
     "widgetId": "aag7huht1p",
@@ -45,7 +43,7 @@
         "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
     },
     "minWidth": 450,
-    "isVisible": "{{!(MissionTable.selectedRow?.id) }}",
+    "isVisible": true,
     "label": "데일리 미션 여부\n",
     "version": 1,
     "parentId": "kmrgkd6ky9",

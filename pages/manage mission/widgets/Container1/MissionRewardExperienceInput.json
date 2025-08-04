@@ -7,7 +7,7 @@
     "maxNum": "10000",
     "animateLoading": true,
     "resetOnSubmit": true,
-    "leftColumn": 54,
+    "leftColumn": 35,
     "dynamicBindingPathList": [
         {"key": "accentColor"},
         {"key": "borderRadius"},
@@ -58,7 +58,7 @@
     "key": "mb3oh3ynwj",
     "labelTextSize": "0.875rem",
     "isDeprecated": false,
-    "rightColumn": 62,
+    "rightColumn": 43,
     "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
     "widgetId": "swa03engsf",
     "minWidth": 450,

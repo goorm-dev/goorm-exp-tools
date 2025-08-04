@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.c4395b694ca4b5a84741345b057b6866.svg",
-    "topRow": 144,
+    "topRow": 129,
     "isSortable": true,
     "defaultNewRow": "{{{name:\"태스크 이름\",\neffortEstimate: 0,\ndescription: \"태스크 설명\"}\n}}",
     "type": "TABLE_WIDGET_V2",
@@ -69,7 +69,7 @@
     },
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "columnUpdatedAt": 1753320983195,
-    "originalBottomRow": 204,
+    "originalBottomRow": 189,
     "defaultSelectedRowIndices": [0],
     "needsErrorInfo": false,
     "mobileBottomRow": 46,
@@ -86,7 +86,7 @@
         {"key": "onAddNewRowSave"}
     ],
     "displayName": "Table",
-    "bottomRow": 204,
+    "bottomRow": 189,
     "columnWidthMap": {
         "isTeamMission": 102,
         "effortEstimate": 60,
@@ -256,7 +256,7 @@
     "horizontalAlignment": "LEFT",
     "isVisibleSearch": true,
     "responsiveBehavior": "fill",
-    "originalTopRow": 144,
+    "originalTopRow": 129,
     "mobileLeftColumn": 8,
     "isVisiblePagination": true,
     "verticalAlignment": "CENTER"
