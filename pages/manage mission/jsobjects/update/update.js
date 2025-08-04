@@ -50,44 +50,48 @@ export default {
 	},
 
 	submitMission: async ({name, ...set}) => {
-		storeValue("isLoading", true);
+		try {
+			storeValue("isLoading", true);
 
-		const missionId = MissionTable.selectedRow?.id;
+			const missionId = MissionTable.selectedRow?.id;
 
-		console.log(set);
+			console.log(set);
 
-		// 수정
-		if(missionId && name) {
-			await Update_Mission.run({missionId, set: {
-				name,
-				...set
-			}})
-		} 
-		// 생성
-		else {
-			const newId = util.makeRandomIdWithPrefix('mi', 10);
+			// 수정
+			if(missionId && name) {
+				await Update_Mission.run({missionId, set: {
+					name,
+					...set
+				}})
+			} 
+			// 생성
+			else {
+				const newId = util.makeRandomIdWithPrefix('mi', 10);
 
-			if(name) {
-				await Insert_Mission.run({
-					mission: {
-						id: newId,
-						name,
-						...set,
-						dailyMissionDate: moment(set.dailyMissionDate).toDate(),
-						precedingMissionIdList: [],
+				if(name) {
+					await Insert_Mission.run({
+						mission: {
+							id: newId,
+							name,
+							...set,
+							dailyMissionDate: moment(set.dailyMissionDate).toDate(),
+							precedingMissionIdList: [],
+						}
+					});
+
+					if(set.isDailyMission) {
+						// 미션 삽입 성공시, 알림 전송
+						await Post_DailyMission_Notification.run({
+							missionId: newId
+						});
 					}
-				});
-
-				// 미션 삽입 성공시, 알림 전송
-				await Post_DailyMission_Notification.run({
-					missionId: newId
-				});
+				}
 			}
+		} catch(e) {} 
+		finally {
+			storeValue("isLoading", false);
+			await get.getMissionList();
 		}
-
-		await get.getMissionList()
-
-		storeValue("isLoading", false);
 	},
 
 	submitPostTag: async ({title}) => {
