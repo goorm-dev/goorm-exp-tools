@@ -1,7 +1,7 @@
 {
     "boxShadow": "none",
     "iconSVG": "/static/media/icon.a62f1265827a5af78966a733a05697db.svg",
-    "labelText": "카테고리",
+    "labelText": "카테고리(필수)",
     "topRow": 4,
     "labelWidth": 5,
     "type": "SELECT_WIDGET",

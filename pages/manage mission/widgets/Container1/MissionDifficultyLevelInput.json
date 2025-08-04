@@ -62,7 +62,7 @@
     "thumbnailSVG": "/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
     "widgetId": "gt3ysm9274",
     "minWidth": 450,
-    "label": "난이도",
+    "label": "난이도(필수)",
     "parentId": "kmrgkd6ky9",
     "labelAlignment": "left",
     "renderMode": "CANVAS",
