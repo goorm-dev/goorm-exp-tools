@@ -12,7 +12,7 @@
         {"key": "boxShadow"},
         {"key": "defaultText"}
     ],
-    "inputType": "html",
+    "inputType": "markdown",
     "isDisabled": false,
     "flexVerticalAlignment": "start",
     "isRequired": false,

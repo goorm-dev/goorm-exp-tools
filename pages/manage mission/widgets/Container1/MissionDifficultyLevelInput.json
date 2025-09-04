@@ -35,6 +35,7 @@
     ],
     "minNum": "1",
     "isLoading": false,
+    "regex": "^[1-5]$",
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "originalBottomRow": 59,
     "needsErrorInfo": false,
