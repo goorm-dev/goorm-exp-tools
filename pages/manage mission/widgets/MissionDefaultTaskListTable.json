@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "/static/media/icon.c4395b694ca4b5a84741345b057b6866.svg",
-    "topRow": 129,
+    "topRow": 130,
     "isSortable": true,
     "defaultNewRow": "{{{name:\"태스크 이름\",\neffortEstimate: 0,\ndescription: \"태스크 설명\"}\n}}",
     "type": "TABLE_WIDGET_V2",
@@ -86,7 +86,7 @@
         {"key": "onAddNewRowSave"}
     ],
     "displayName": "Table",
-    "bottomRow": 189,
+    "bottomRow": 190,
     "columnWidthMap": {
         "isTeamMission": 102,
         "effortEstimate": 60,

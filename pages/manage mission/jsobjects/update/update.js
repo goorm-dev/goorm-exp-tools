@@ -76,6 +76,7 @@ export default {
 							...set,
 							dailyMissionDate: moment(set.dailyMissionDate).toDate(),
 							precedingMissionIdList: [],
+							isDraft: false,
 						}
 					});
 

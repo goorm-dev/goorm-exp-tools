@@ -2,7 +2,7 @@
     "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
     "iconSVG": "/static/media/icon.06d230b800553d2866ed7f3ec0474e3e.svg",
     "labelText": "설명",
-    "topRow": 19,
+    "topRow": 22,
     "labelWidth": 5,
     "type": "RICH_TEXT_EDITOR_WIDGET",
     "animateLoading": true,
@@ -39,7 +39,7 @@
         "input",
         "rte"
     ],
-    "bottomRow": 44,
+    "bottomRow": 47,
     "parentRowSpace": 10,
     "hideCard": false,
     "mobileRightColumn": 25,

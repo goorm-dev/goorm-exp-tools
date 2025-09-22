@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{\n\torganizationId: {{appsmith.store.organizationId}},\n\tid:{{this.params.mission.id}}\n\tcreatedAt: {{util.getMongoDbDate()}},\n\tupdatedAt: {{util.getMongoDbDate()}},\n\tisDeleted: false,\n\tname: {{this.params.mission.name}},\n\tcategoryId: {{this.params.mission.categoryId}},\n\tdescription: {{this.params.mission.description}},\n\tdefaultTaskList: [],\ndifficultyLevel: {{this.params.mission.difficultyLevel}},\nisTeamMission: {{this.params.mission.isTeamMission}},\nlevelRequirement: {{this.params.mission.levelRequirement}},\nprecedingMissionIdList: [],\nreward: {{this.params.mission.reward}},\ntagIdList: {{this.params.mission.tagIdList}},\nisDailyMission: {{this.params.mission.isDailyMission}},\ndailyMissionDate: { $date: {{this.params.mission.dailyMissionDate}} }\n\t\t\t\t\t\t\t\t\t}]"
+            "data": "[{\n\torganizationId: {{appsmith.store.organizationId}},\n\tid:{{this.params.mission.id}}\n\tcreatedAt: {{util.getMongoDbDate()}},\n\tupdatedAt: {{util.getMongoDbDate()}},\n\tisDeleted: false,\n\tname: {{this.params.mission.name}},\n\tcategoryId: {{this.params.mission.categoryId}},\n\tdescription: {{this.params.mission.description}},\n\tdefaultTaskList: [],\ndifficultyLevel: {{this.params.mission.difficultyLevel}},\nisTeamMission: {{this.params.mission.isTeamMission}},\nlevelRequirement: {{this.params.mission.levelRequirement}},\nprecedingMissionIdList: [],\nreward: {{this.params.mission.reward}},\ntagIdList: {{this.params.mission.tagIdList}},\nisDailyMission: {{this.params.mission.isDailyMission}},\ndailyMissionDate: { $date: {{this.params.mission.dailyMissionDate}} },\nisDraft: false\n}]"
           }
         },
         "smartSubstitution": {
