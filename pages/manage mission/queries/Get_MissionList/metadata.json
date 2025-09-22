@@ -60,7 +60,7 @@
         },
         "find": {
           "query": {
-            "data": "{ organizationId: '{{appsmith.store.organizationId}}', isDeleted: false}"
+            "data": "{ organizationId: '{{appsmith.store.organizationId}}', isDeleted: false, isDraft: false}"
           },
           "sort": {
             "data": "{\"_id\": 1}"
