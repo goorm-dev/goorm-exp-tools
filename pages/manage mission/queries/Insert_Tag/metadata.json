@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{\n\t\"createdAt\": {{util.getMongoDbDate()}},\n\t\"estimatedCount\": 0,\n\t\"id\": {{this.params.id}},\n\t\"title\": {{this.params.title}},\n\t\"updatedAt\": {{util.getMongoDbDate()}},\n}]"
+            "data": "[{\n\t\"createdAt\": {{util.getMongoDbDate()}},\n\t\"organizationId\": {{appsmith.store.organizationId}},\n\t\"estimatedCount\": 0,\n\t\"id\": {{this.params.id}},\n\t\"title\": {{this.params.title}},\n\t\"updatedAt\": {{util.getMongoDbDate()}},\n}]"
           }
         },
         "misc": {
@@ -112,6 +112,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
+      "appsmith.store.organizationId",
       "this.params.id",
       "this.params.title",
       "util.getMongoDbDate()"
